@@ -1,0 +1,9 @@
+{"title": "📥 入库完成｜{{ title }}（{{ year }}）{% if season_episode %} {{ season_episode }}{% endif %}",
+"text": 
+"⭐ 综合评分｜{{ vote_average }}\n"
+"🎭 内容类型｜{{ type }}{% if category %} · {{ category }}{% endif %}\n"
+"📜 内容描述｜{{ overview }}\n\n"
+"{% if err_msg %}"
+"⚠ 异常提示｜{{ err_msg }}"
+"{% endif %}"
+}
