@@ -1,0 +1,37 @@
+
+{"title": "✅ 订阅达成｜{{ title_year }}{% if season %} {{ '第%d季'|format(season|int) }}{% endif %}",
+"text": 
+"{% if vote_average %}"
+"⭐ 媒体评分｜{{ vote_average }}\n"
+"{% endif %}"
+"{% if category %}"
+"{% if '电影' in category %}🎬{% elif '剧集' in category %}📺{% elif '动漫' in category %}🧸{% else %}📁{% endif %} 内容类型｜{{ category }}\n"
+"{% endif %}"
+"{% if username or actors %}"
+"{% set items = [] %}"
+"{% if username %}{% set _ = items.append('👤 操作账号｜' + username) %}{% endif %}"
+"{% if actors %}{% set _ = items.append('🎭 主演阵容｜' + actors) %}{% endif %}"
+"{{ items|join(' | ') }}\n"
+"{% endif %}"
+"{% if overview %}"
+"📜 剧情摘要｜{{ overview }}"
+"{% endif %}"
+}{
+    "title": "✅ 订阅达成｜{{ title_year }}{% if season %} {{ '第%d季'|format(season|int) }}{% endif %}",
+    "text": 
+        "{% if vote_average %}"
+        "⭐ 媒体评分｜{{ vote_average }}\n"
+        "{% endif %}"
+        "{% if category %}"
+        "{% if '电影' in category %}🎬{% elif '剧集' in category %}📺{% elif '动漫' in category %}🧸{% else %}📁{% endif %} 内容类型｜{{ category }}\n"
+        "{% endif %}"
+        "{% if username %}"
+        "👤 操作账号｜{{ username }}\n"
+        "{% endif %}"
+        "{% if actors %}"
+        "🎭 主演阵容｜{{ actors }}\n"
+        "{% endif %}"
+        "{% if overview %}"
+        "📜 剧情摘要｜{{ overview }}"
+        "{% endif %}"
+}
