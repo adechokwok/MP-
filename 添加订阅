@@ -1,0 +1,18 @@
+{    "title": "📌 订阅添加｜{{ title_year }}{% if season %} {{ 'S%02d'|format(season|int) }}{% endif %}",
+    "text": 
+        "{% if vote_average %}"
+        "⭐ 媒体评分｜{{ vote_average }}\n"
+        "{% endif %}"
+        "{% if category %}"
+        "{% if '电影' in category %}🎬{% elif '剧集' in category %}📺{% elif '动漫' in category %}🧸{% else %}📁{% endif %} 内容类型｜{{ category }}\n"
+        "{% endif %}"
+        "{% if username %}"
+        "👤 订阅用户｜{{ username }}\n"
+        "{% endif %}"
+        "{% if actors %}"
+        "🎭 演员列表｜{{ actors }}\n"
+        "{% endif %}"
+        "{% if overview %}"
+        "📝 内容简介｜{{ overview }}"
+        "{% endif %}"
+}
